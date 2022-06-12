@@ -1,4 +1,4 @@
-const quoteList = [{
+[{
     author: 'Dalia lama',
     text: 'The purpose of our lives is to be happy.'
   },
@@ -1305,6 +1305,4 @@ const quoteList = [{
  {  
     text:"“You may be disappointed if you fail, but you are doomed if you don’t try.",
     author:"Beverly Sills, operatic soprano"
- } ];
-
- export default quoteList;
+ } ]
