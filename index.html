@@ -17,12 +17,20 @@
     <div id="root"></div>
     <script defer type="text/babel" data-presets="es2017,react,stage-3" src="./src/index.js">
     
-    import TwitterIcon from 'https://cdn.skypack.dev/@mui/icons-material/Twitter';
-import './App.scss';
-import quoteList from './quotes_list';
-import colorList from './colorList';
-//var { useState } = 'react';
+import TwitterIcon from 'https://cdn.skypack.dev/@mui/icons-material/Twitter';
+import './src/App.scss';
+import quoteList from './src/quotes_list';
+import colorList from './src/colorList';
 
+import './src/index.css';
+import Quote from './src/Quote.js';
+
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(
+  <React.StrictMode>
+    <Quote />
+  </React.StrictMode>
+);
 function Quote() {
   const colors = colorList;
   const quoteBank = quoteList;
@@ -46,10 +54,7 @@ function Quote() {
     } else {
       randomAuthorAndQuote()
     }  
-    
-
   }
-  
 
   return (
     <div className='App'>
