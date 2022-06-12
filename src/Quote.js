@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+//import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+//import { faTwitter } from '@fortawesome/free-brands-svg-icons';
+import TwitterIcon from 'https://cdn.skypack.dev/@mui/icons-material/Twitter';
 import './App.scss';
 import quoteList from './quotes_list';
 import colorList from './colorList';
@@ -40,7 +41,9 @@ function Quote() {
       <p id="text">{quote}</p>
       <p id="author">- {author}</p>
       <a id="tweet-quote" href='https://twitter.com/intent/tweet' target='_blank' rel="noreferrer" style={{backgroundColor: color}}>
-      <FontAwesomeIcon icon={faTwitter} />
+        {//<FontAwesomeIcon icon={faTwitter} />}
+        {TwitterIcon}
+      }
       </a>
       <button id="new-quote" style={{backgroundColor: color}} onClick={()=> {
         randomAuthorAndQuote()
