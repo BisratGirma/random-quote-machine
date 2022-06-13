@@ -1,5 +1,6 @@
 import React, { useState } from "https://cdn.skypack.dev/react";
 import * as ReactDOM from "https://cdn.skypack.dev/react-dom";
+import * as scss from "https://cdn.skypack.dev/scss";
 //import * as fetch from "https://cdn.skypack.dev/fetch@1.1.0";
 
 function Quote() {
